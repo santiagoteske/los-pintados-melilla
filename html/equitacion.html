@@ -1,169 +1,292 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="../assets/css/styles.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Descubre todo sobre Los Pintados Melilla, un espacio dedicado a la equitación en Montevideo. Aprende más sobre nuestra misión, actividades como la equinoterapia, monta recreativa, y cómo contactarnos."
+    />
+    <meta
+      name="keywords"
+      content="equitación, equinoterapia, monta recreativa, Los Pintados, Melilla, Montevideo, contacto"
+    />
+    <meta name="author" content="Los Pintados Melilla" />
+    <meta
+      property="og:title"
+      content="Los Pintados Melilla - Equitación y Más"
+    />
+    <meta
+      property="og:description"
+      content="Únete a nosotros en Los Pintados Melilla, donde ofrecemos equitación, equinoterapia y más en Montevideo. Aprende y disfruta con nosotros."
+    />
+    <meta
+      property="og:image"
+      content="https://santiagoteske.github.io/los-pintados-melilla/assets/images/pintados-logo.jpg"
+    />
+    <meta
+      property="og:url"
+      content="https://santiagoteske.github.io/los-pintados-melilla/html/equitacion.html"
+    />
+    <meta property="og:type" content="website" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>Los Pintados Melilla</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <nav class="navbar navbar-expand-lg sticky-top">
-        <div class="container-fluid">
-            <a class="navbar-brand">
-                <img src="../assets/images/pintados-logo.jpg" alt="Logo" width="90" height="72"
-                    class="d-inline-block align-text-top">
-            </a>
+      <div class="container-fluid">
+        <a class="navbar-brand">
+          <img
+            src="../assets/images/pintados-logo.jpg"
+            alt="Logo"
+            width="90"
+            height="72"
+            class="d-inline-block align-text-top"
+          />
+        </a>
+      </div>
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html"
+                >Inicio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./mision.html">Mision</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle nav-link active"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Actividades
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="./equinoterapia.html"
+                    >Equinoterapia</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./monta.html"
+                    >Monta Recreativa</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./equitacion.html"
+                    >Equitación</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contacto.html">Contacto</a>
+            </li>
+          </ul>
         </div>
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./mision.html">Mision</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle nav-link active" href="#" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Actividades
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="./equinoterapia.html">Equinoterapia</a></li>
-                            <li><a class="dropdown-item" href="./monta.html">Monta Recreativa</a></li>
-                            <li><a class="dropdown-item" href="./equitacion.html">Equitación</a></li>
-                        </ul>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./nosotros.html">Nosotros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./contacto.html">Contacto</a>
-                    </li>
-                    </li>
-                </ul>
-            </div>
-        </div>
+      </div>
     </nav>
-    <div id="carouselExampleCaptions" class="carousel slide" data-aos="zoom-out" data-aos-duration="1500">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="https://elgranero.org/wp-content/uploads/2016/11/big-main-1080x675.png" class="d-block w-100"
-                    alt="Actividades">
-                <div class="carousel-caption d-none d-md-block">
-                </div>
-            </div>
-
-            <div class="carousel-item">
-                <img src="https://cdn.euroinnova.edu.es/img/subidasEditor/dise%C3%B1o%20sin%20t%C3%ADtulo%20-%202022-07-06t124936-1657104611.466"
-                    class="d-block w-100" alt="Equitacion">
-            </div>
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-aos="zoom-out"
+      data-aos-duration="1500"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            loading="eager"
+            src="../assets/images/equitacion.jpg"
+            class="d-block w-100"
+            alt="Competencia de equitacion"
+          />
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
+
+        <div class="carousel-item">
+          <img
+            loading="lazy"
+            src="../assets/images/equitacion-salto.jpg"
+            class="d-block w-100"
+            alt="Hombre saltando en competencia de equitacion"
+          />
+        </div>
+
+        <div class="carousel-item">
+          <img
+            loading="lazy"
+            src="../assets/images/salto.jpg"
+            class="d-block w-100"
+            alt="Niño saltando en competencia de equitacion"
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-    <section class="container-xxl" data-aos="fade-right" data-aos-duration="1500">
-        <h1>Equitación</h1>
-        <p>
-            La equitación es una disciplina elegante y técnica que combina habilidad, equilibrio y una profunda conexión
-            con el caballo. En esta actividad, los jinetes aprenden a montar con precisión y estilo, trabajando en
-            perfecta armonía con su caballo. La equitación abarca una variedad de estilos y técnicas, desde el
-            adiestramiento y el salto hasta el recorrido de cross-country, cada uno con sus propios desafíos y
-            recompensas.
-        </p>
-        <p>Además de mejorar la postura, la coordinación y la fuerza, la equitación ofrece beneficios emocionales y
-            mentales. Los jinetes desarrollan una mayor confianza en sí mismos y en su capacidad para comunicarse con el
-            caballo, mientras disfrutan de la belleza del entorno natural y la satisfacción de superar retos. Con cada
-            sesión, la equitación no solo perfecciona habilidades y técnicas, sino que también brinda una experiencia
-            gratificante y enriquecedora tanto para el jinete como para el caballo.</p>
+    <section
+      class="container-xxl"
+      data-aos="fade-right"
+      data-aos-duration="1500"
+    >
+      <h1>Equitación</h1>
+      <p>
+        La equitación es una disciplina elegante y técnica que combina
+        habilidad, equilibrio y una profunda conexión con el caballo. En esta
+        actividad, los jinetes aprenden a montar con precisión y estilo,
+        trabajando en perfecta armonía con su caballo. La equitación abarca una
+        variedad de estilos y técnicas, desde el adiestramiento y el salto hasta
+        el recorrido de cross-country, cada uno con sus propios desafíos y
+        recompensas.
+      </p>
+      <p>
+        Además de mejorar la postura, la coordinación y la fuerza, la equitación
+        ofrece beneficios emocionales y mentales. Los jinetes desarrollan una
+        mayor confianza en sí mismos y en su capacidad para comunicarse con el
+        caballo, mientras disfrutan de la belleza del entorno natural y la
+        satisfacción de superar retos. Con cada sesión, la equitación no solo
+        perfecciona habilidades y técnicas, sino que también brinda una
+        experiencia gratificante y enriquecedora tanto para el jinete como para
+        el caballo.
+      </p>
     </section>
-    <section class="container-xxl" data-aos="fade-left" data-aos-duration="1500">
-        <div id="carouselExampleCaptions" class="carousel slide">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/77/Equitaci%C3%B3n.jpg"
-                        class="d-block w-60" alt="Caballo equinoterapia">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+    <section
+      class="container-xxl"
+      data-aos="fade-left"
+      data-aos-duration="1500"
+    >
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              loading="lazy"
+              src="../assets/images/caballo-equitacion.jpg"
+              class="d-block w-60"
+              alt="Relampago, nuestro campeon de equitacion"
+            />
+          </div>
         </div>
-
+      </div>
     </section>
-    <section class="container-xxl" data-aos="fade-right" data-aos-duration="1500">
-        <p>
-            ¡Te presentamos a Relámpago, el caballo estrella de la equitación que brilla con habilidad y elegancia!
-            Relámpago es conocido por su impresionante porte y su destreza en el ring. Con su pelaje brillante y su
-            andar majestuoso, este caballo combina fuerza y agilidad en cada movimiento. Relámpago es un compañero
-            confiable y experimentado, ideal para aquellos que buscan perfeccionar su técnica y disfrutar de la
-            equitación en su máxima expresión.
-        </p>
-        <p>
-            Relámpago se destaca en el adiestramiento y el salto, mostrando una habilidad excepcional para ejecutar cada
-            maniobra con precisión y gracia. Su naturaleza amable y su disposición para trabajar lo convierten en un
-            favorito tanto para los jinetes novatos como para los más experimentados. Con Relámpago, cada sesión de
-            equitación se convierte en una oportunidad para mejorar las habilidades y vivir la experiencia de montar un
-            caballo con talento y carácter inigualables. ¡Montar a Relámpago es una verdadera aventura de elegancia y
-            excelencia en el arte de la equitación!
-        </p>
+    <section
+      class="container-xxl"
+      data-aos="fade-right"
+      data-aos-duration="1500"
+    >
+      <p>
+        ¡Te presentamos a Relámpago, el caballo estrella de la equitación que
+        brilla con habilidad y elegancia! Relámpago es conocido por su
+        impresionante porte y su destreza en el ring. Con su pelaje brillante y
+        su andar majestuoso, este caballo combina fuerza y agilidad en cada
+        movimiento. Relámpago es un compañero confiable y experimentado, ideal
+        para aquellos que buscan perfeccionar su técnica y disfrutar de la
+        equitación en su máxima expresión.
+      </p>
+      <p>
+        Relámpago se destaca en el adiestramiento y el salto, mostrando una
+        habilidad excepcional para ejecutar cada maniobra con precisión y
+        gracia. Su naturaleza amable y su disposición para trabajar lo
+        convierten en un favorito tanto para los jinetes novatos como para los
+        más experimentados. Con Relámpago, cada sesión de equitación se
+        convierte en una oportunidad para mejorar las habilidades y vivir la
+        experiencia de montar un caballo con talento y carácter inigualables.
+        ¡Montar a Relámpago es una verdadera aventura de elegancia y excelencia
+        en el arte de la equitación!
+      </p>
     </section>
     <div class="clear"></div>
     <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 mb-3 mb-md-0">
-                    <p><strong>Contacto:</strong> +598 999 999 999</p>
-                    <p>Camino De La Chiripiorca 1354<br>
-                        Melilla, Montevideo - Uruguay</p>
-                </div>
-                <div class="col-md-6 text-md-end">
-                    <p><strong>Seguinos en nuestras redes:</strong></p>
-                    <div class="d-flex justify-content-end">
-                        <a href="https://www.facebook.com" target="_blank" class="me-2">
-                            <img src="../assets/images/facebook.png" alt="Facebook" width="40" height="40">
-                        </a>
-                        <a href="https://www.instagram.com" target="_blank" class="me-2">
-                            <img src="../assets/images/instagram.png" alt="Instagram" width="40" height="40">
-                        </a>
-                        <a href="https://wa.me/598999999999" target="_blank">
-                            <img src="../assets/images/whatsapp.png" alt="WhatsApp" width="40" height="40">
-                        </a>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 mb-3 mb-md-0">
+            <p><strong>Contacto:</strong> +598 999 999 999</p>
+            <p>
+              Camino De La Chiripiorca 1354<br />
+              Melilla, Montevideo - Uruguay
+            </p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <p><strong>Seguinos en nuestras redes:</strong></p>
+            <div class="d-flex justify-content-end">
+              <a href="https://www.facebook.com" target="_blank" class="me-2">
+                <img
+                  src="../assets/images/facebook.png"
+                  alt="Facebook"
+                  width="40"
+                  height="40"
+                />
+              </a>
+              <a href="https://www.instagram.com" target="_blank" class="me-2">
+                <img
+                  src="../assets/images/instagram.png"
+                  alt="Instagram"
+                  width="40"
+                  height="40"
+                />
+              </a>
+              <a href="https://wa.me/598999999999" target="_blank">
+                <img
+                  src="../assets/images/whatsapp.png"
+                  alt="WhatsApp"
+                  width="40"
+                  height="40"
+                />
+              </a>
             </div>
+          </div>
         </div>
+      </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init();
+      AOS.init();
     </script>
-</body>
-
+  </body>
 </html>
