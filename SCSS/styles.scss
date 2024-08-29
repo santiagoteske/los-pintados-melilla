@@ -3,7 +3,7 @@ $navbar-bg: rgba(195, 165, 142, 0.9);
 $active-color: rgb(69, 89, 13);
 $dropdown-bg: rgba(195, 165, 142, 0.902);
 $dropdown-hover-bg: rgb(98, 120, 38);
-$bg-color: rgba(240, 234, 210);
+$bg-color: rgb(254,250,224);
 $bg-footer: rgba(221, 229, 182);
 $text-color: black;
 
@@ -15,7 +15,7 @@ $text-color: black;
 
 // Estilos para el navbar
 .navbar {
-    background-color: $navbar-bg;
+    background-color: $navbar-bg;    
     padding: 10px;
 
     .navbar-brand {
@@ -102,32 +102,117 @@ $text-color: black;
 
 // Estilos globales
 body {
+
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: $bg-color;
+    background-color: $bg-color;    
+    background: linear-gradient(0deg, rgba(254,250,224,1) 38%, rgb(235, 211, 149) 100%);
+    
+    
+    h1 {
+        margin-top: 10%;
+        margin-bottom: 5%;
+    }
+    
+    .container-xxl{
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .container-xl{
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
 }
 
 
 // Estilos para el carrusel
+
+
 .carousel {
-    max-width: 85%;
-    margin: 0 auto;
-
+    max-width: 100%;
+    margin: 0px auto;     
+    
     .carousel-inner img {
-        max-width: 100%;
-        height: auto;
-        object-fit: cover;
+        max-height: 800px;
+        max-width: 100%;        
+        height:auto;       
+        width: 100%;      
     }
+    
+}
 
-    .carousel-item img {
+// Estilos para el contenedor del carrusel
+.carousel {
+    position: relative; // Necesario para posicionar los botones de navegación
+    max-width: 100%;
+    margin: 0 auto; // Centra el carrusel horizontalmente
+    
+    .carousel-inner img {
+        max-height: 800px;
         width: 100%;
         height: auto;
-        max-height: 900px;
-        object-fit: cover;
     }
 }
 
+// Estilos para los botones de navegación del carrusel
+.carousel-control-prev,
+.carousel-control-next {
+    width: 100px;  
+    height: 100px;      
+    z-index: 10;    
+    top: 50%;       
+    transform: translateY(-50%); // Ajusta la posición para centrar verticalmente
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute; // Necesario para posicionar el botón respecto al contenedor
+    background-color: rgba(159, 159, 159, 0.692); 
+    border-radius: 50%;
+    
+    // Estilos para el ícono de flecha
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        background-position: center; // Centra el ícono dentro del botón
+        width: 60px; // Ajusta el tamaño del ícono
+        height: 60px; // Ajusta el tamaño del ícono
+    }
+
+    &:hover,
+    &:focus {
+        background-color: rgba(0, 0, 0, 0.7); // Fondo al pasar el ratón
+    }
+}
+
+.carousel-control-prev {
+    left: 5%; // Ajusta la distancia del borde izquierdo del contenedor    
+}
+
+.carousel-control-next {
+    right: 5%; // Ajusta la distancia del borde derecho del contenedor
+}
+
+// Ajusta el tamaño del ícono en dispositivos móviles
+@media (max-width: 600px) {
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 55px;  
+        height: 55px; 
+
+        // Estilos para el ícono de flecha
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            width: 45px; // Tamaño del ícono en dispositivos móviles
+            height: 45px; // Tamaño del ícono en dispositivos móviles
+        }
+    }
+}
+
+
+
+    
 // Otros estilos
 .text-container {
     @include center-flex;
@@ -135,8 +220,10 @@ body {
 }
 
 .clear {
-    clear: both;
+clear: both;
 }
+
+
 
 // Estilos para el footer
 .footer {
@@ -167,9 +254,5 @@ body {
             margin-left: 20px;
         }
     }
-
-    img {
-        max-width: 100%;
-        height: auto;
-    }
+        
 }
